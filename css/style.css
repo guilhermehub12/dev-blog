@@ -274,3 +274,31 @@
       border-radius: 9999px;
       font-size: 0.875rem;
     }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      text-align: center;
+      color: #6b7280;
+    }
+
+    @media (min-width: 768px) {
+      .footer {
+        text-align: left;
+      }
+    }
+
+    .footer-links a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      margin-top: 1rem;
+      color: #9ca3af;
+    }
