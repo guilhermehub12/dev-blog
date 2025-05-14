@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Tech News</title>
 </head>
@@ -12,97 +11,96 @@
 
     </header>
     
-    <main class="flex flex-col md:flex-row max-w-7xl mx-auto px-4 py-8 gap-8">
+    <main class="main-container">
 
-        <section class="flex-1 space-y-8">
+        <section class="posts">
             <!-- Post 1 -->
-            <article class="flex flex-col md:flex-row justify-between border-b pb-6 gap-4">
-            <div class="flex-1">
-                <div class="text-sm text-gray-500">Comunidade Front-End</div>
-                <h2 class="text-xl font-bold">Front End Day - O maior evento de tecnologia do Nordeste</h2>
-                <p class="text-gray-600">Se você é apaixonado por tecnologia, inovação e comunidade, o Front End Day é o seu lugar! Reunindo desenvolvedores, designers e entusiastas para um dia de aprendizado e conexões.</p>
-                <div class="flex items-center text-sm text-gray-500 mt-2 space-x-4">
-                <span>⭐ 14 Mai</span>
-                <span>👁️ 1.1K</span>
-                <span>💬 34</span>
+            <article class="post">
+                <div class="post-text">
+                    <div class="post-category">Comunidade Front-End CE</div>
+                    <h2 class="post-title">Front End Day - O maior evento de tecnologia do Nordeste</h2>
+                    <p class="post-description">Se você é apaixonado por tecnologia, inovação e comunidade, o Front End Day é o seu lugar! Reunindo desenvolvedores, designers e entusiastas para um dia de aprendizado e conexões.</p>
+                    <div class="post-meta">
+                        <span>⭐ 14 Mai</span>
+                        <span>👁️ 1.1K</span>
+                        <span>💬 34</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-48 aspect-video flex-shrink-0">
-                <img src="img/frontEndDay.png" alt="Miniatura do evento Front End Day" class="w-full h-full object-cover rounded" />
-            </div>
+                <div class="post-image">
+                    <img src="img/frontEndDay.png" alt="Miniatura do evento Front End Day">
+                </div>
             </article>
 
             <!-- Post 2 -->
-            <article class="flex flex-col md:flex-row justify-between border-b pb-6 gap-4">
-            <div class="flex-1">
-                <div class="text-sm text-gray-500">HouseJS Comunidade</div>
-                <h2 class="text-xl font-bold">🚀 Decola Junior – Sua decolagem no mundo da programação</h2>
-                <p class="text-gray-600">Evento 100% gratuito com palestra de Leonardo Leitão (Cod3r), roda de conversa, networking e novas oportunidades! Data: 28/06 na Unifametro – Carneiro da Cunha.</p>
-                <div class="flex items-center text-sm text-gray-500 mt-2 space-x-4">
-                <span>⭐ 28 Jun</span>
-                <span>👁️ 2.3K</span>
-                <span>💬 76</span>
+            <article class="post">
+                <div class="post-text">
+                    <div class="post-category">Comunidade HouseJS</div>
+                    <h2 class="post-title">🚀 Decola Junior – Sua decolagem no mundo da programação</h2>
+                    <p class="post-description">Evento 100% gratuito com palestra de Leonardo Leitão (Cod3r), roda de conversa, networking e novas oportunidades! Data: 28/06 na Unifametro – Carneiro da Cunha.</p>
+                    <div class="post-meta">
+                        <span>⭐ 28 Jun</span>
+                        <span>👁️ 2.3K</span>
+                        <span>💬 76</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-48 aspect-video flex-shrink-0">
-                <img src="img/decolajr.jpg" alt="Miniatura do evento Decola Junior" class="w-full h-full object-cover rounded" />
-            </div>
+                <div class="post-image">
+                    <img src="img/decolajr.jpg" alt="Miniatura do evento Decola Junior">
+                </div>
             </article>
 
             <!-- Post 3 -->
-            <article class="flex flex-col md:flex-row justify-between border-b pb-6 gap-4">
-            <div class="flex-1">
-                <div class="text-sm text-gray-500">GitHub Community Fortaleza</div>
-                <h2 class="text-xl font-bold">GitTogether - Palestras, networking e café grátis!</h2>
-                <p class="text-gray-600">Neste sábado (17/05) tem GitTogether na @faculdadecdl. Evento gratuito com muito aprendizado, palestras e networking. Link para inscrição na bio!</p>
-                <div class="flex items-center text-sm text-gray-500 mt-2 space-x-4">
-                <span>⭐ 17 Mai</span>
-                <span>👁️ 870</span>
-                <span>💬 22</span>
+            <article class="post">
+                <div class="post-text">
+                    <div class="post-category">Comunidade GitHub Fortaleza</div>
+                    <h2 class="post-title">GitTogether - Palestras, networking e café grátis!</h2>
+                    <p class="post-description">Neste sábado (17/05) tem GitTogether na @faculdadecdl. Evento gratuito com muito aprendizado, palestras e networking. Link para inscrição na bio!</p>
+                    <div class="post-meta">
+                        <span>⭐ 17 Mai</span>
+                        <span>👁️ 870</span>
+                        <span>💬 22</span>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full md:w-48 aspect-video flex-shrink-0">
-                <img src="img/gitTogether.jpg" alt="Miniatura do evento GitTogether" class="w-full h-full object-cover rounded" />
-            </div>
+                <div class="post-image">
+                    <img src="img/gitTogether.jpg" alt="Miniatura do evento GitTogether">
+                </div>
             </article>
         </section>
 
         <!-- Barra lateral -->
-        <aside class="w-full md:w-72 space-y-8">
+        <aside class="sidebar">
             <!-- Destaques da equipe -->
             <div>
-            <h3 class="text-lg font-semibold mb-2">Escolhas da Equipe</h3>
-            <ul class="space-y-2 text-sm text-gray-700">
-                <li>
-                <p class="font-medium">Curiosidade alimenta a própria curiosidade</p>
-                <span class="text-gray-500">há 4 dias</span>
-                </li>
-                <li>
-                <p class="font-medium">E se você não precisasse se sentir melhor para viver melhor?</p>
-                <span class="text-gray-500">23 Abr</span>
-                </li>
-                <li>
-                <p class="font-medium">Você sabe identificar fake news? Muitos não sabem...</p>
-                <span class="text-gray-500">18 Abr</span>
-                </li>
-            </ul>
+                <h3 class="sidebar-title">Escolhas da Equipe</h3>
+                <ul class="sidebar-list">
+                    <li>
+                        <p class="sidebar-item">Curiosidade alimenta a própria curiosidade</p>
+                        <span class="sidebar-date">há 4 dias</span>
+                    </li>
+                    <li>
+                        <p class="sidebar-item">E se você não precisasse se sentir melhor para viver melhor?</p>
+                        <span class="sidebar-date">23 Abr</span>
+                    </li>
+                    <li>
+                        <p class="sidebar-item">Você sabe identificar fake news? Muitos não sabem...</p>
+                        <span class="sidebar-date">18 Abr</span>
+                    </li>
+                </ul>
             </div>
 
             <!-- Tópicos recomendados -->
             <div>
-            <h3 class="text-lg font-semibold mb-2">Tópicos recomendados</h3>
-            <div class="flex flex-wrap gap-2">
-                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Desenvolvimento Web</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Carreira Tech</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Eventos</span>
-                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Comunidades</span>
+                <h3 class="sidebar-title">Tópicos recomendados</h3>
+                <div class="tags">
+                    <span class="tag">Desenvolvimento Web</span>
+                    <span class="tag">Carreira Tech</span>
+                    <span class="tag">Eventos</span>
+                    <span class="tag">Comunidades</span>
+                </div>
             </div>
-            </div>
+
         </aside>
+
     </main>
 
-    <footer>
-
- </footer>    
 </body>
 </html>
