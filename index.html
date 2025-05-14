@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Tech News</title>
 </head>
-<body>
-    <header>
 
+<body>
+    <header class="site-header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">CB - Tech News</a>
+            </div>
+
+            <!-- Busca -->
+            <div class="search-wrapper">
+                <svg class="icon icon-search" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+                    <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                <input type="text" placeholder="Pesquisar" />
+            </div>
+
+            <div class="search-wrapper-sm">
+                <svg class="icon icon-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                    viewBox="0 0 24 24" aria-label="Search">
+                    <path fill="currentColor" fill-rule="evenodd"
+                        d="M4.092 11.06a6.95 6.95 0 1 1 13.9 0 6.95 6.95 0 0 1-13.9 0m6.95-8.05a8.05 8.05 0 1 0 5.13 14.26l3.75 3.75a.56.56 0 1 0 .79-.79l-3.73-3.73A8.05 8.05 0 0 0 11.042 3z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+
+            <!-- Ações do usuário -->
+            <div class="user-actions">
+                <!-- Write -->
+                <a href="#" class="btn-action" id="write-post">
+                    <svg class="icon icon-write" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 21v-3.586l12.707-12.707a1 1 0 0 1 1.414 0l.586.586a1 1 0 0 1 0 1.414L6 19.414H4z" />
+                        <path
+                            d="M17.707 2.293a1 1 0 0 1 1.414 0l2.586 2.586a1 1 0 0 1 0 1.414L14.414 13H11.828l5.879-5.879z" />
+                    </svg>
+                    <span>Escrever</span>
+                </a>
+
+                <!-- Notificações -->
+                <button class="btn-action" aria-label="Notificações">
+                    <svg class="icon icon-bell" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2a6 6 0 0 0-6 6v3.586l-1.707 1.707A1 1 0 0 0 4 15h16a1 1 0 0 0 .707-1.707L18 11.586V8a6 6 0 0 0-6-6z" />
+                        <path d="M8 18a4 4 0 0 0 8 0H8z" />
+                    </svg>
+                </button>
+
+                <!-- Avatar -->
+                <a href="#" class="avatar">
+                    <img src="https://placehold.co/32x32.png" alt="Foto do Usuário" />
+                </a>
+            </div>
+        </div>
     </header>
-    
+
     <main class="main-container">
 
         <section class="posts">
@@ -19,7 +75,9 @@
                 <div class="post-text">
                     <div class="post-category">Comunidade Front-End CE</div>
                     <h2 class="post-title">Front End Day - O maior evento de tecnologia do Nordeste</h2>
-                    <p class="post-description">Se você é apaixonado por tecnologia, inovação e comunidade, o Front End Day é o seu lugar! Reunindo desenvolvedores, designers e entusiastas para um dia de aprendizado e conexões.</p>
+                    <p class="post-description">Se você é apaixonado por tecnologia, inovação e comunidade, o Front End
+                        Day é o seu lugar! Reunindo desenvolvedores, designers e entusiastas para um dia de aprendizado
+                        e conexões.</p>
                     <div class="post-meta">
                         <span>⭐ 14 Mai</span>
                         <span>👁️ 1.1K</span>
@@ -36,7 +94,8 @@
                 <div class="post-text">
                     <div class="post-category">Comunidade HouseJS</div>
                     <h2 class="post-title">🚀 Decola Junior – Sua decolagem no mundo da programação</h2>
-                    <p class="post-description">Evento 100% gratuito com palestra de Leonardo Leitão (Cod3r), roda de conversa, networking e novas oportunidades! Data: 28/06 na Unifametro – Carneiro da Cunha.</p>
+                    <p class="post-description">Evento 100% gratuito com palestra de Leonardo Leitão (Cod3r), roda de
+                        conversa, networking e novas oportunidades! Data: 28/06 na Unifametro – Carneiro da Cunha.</p>
                     <div class="post-meta">
                         <span>⭐ 28 Jun</span>
                         <span>👁️ 2.3K</span>
@@ -53,7 +112,8 @@
                 <div class="post-text">
                     <div class="post-category">Comunidade GitHub Fortaleza</div>
                     <h2 class="post-title">GitTogether - Palestras, networking e café grátis!</h2>
-                    <p class="post-description">Neste sábado (17/05) tem GitTogether na @faculdadecdl. Evento gratuito com muito aprendizado, palestras e networking. Link para inscrição na bio!</p>
+                    <p class="post-description">Neste sábado (17/05) tem GitTogether na @faculdadecdl. Evento gratuito
+                        com muito aprendizado, palestras e networking. Link para inscrição na bio!</p>
                     <div class="post-meta">
                         <span>⭐ 17 Mai</span>
                         <span>👁️ 870</span>
@@ -101,6 +161,5 @@
         </aside>
 
     </main>
-
 </body>
 </html>
