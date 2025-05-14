@@ -11,28 +11,163 @@
       line-height: 1.6;
     }
 
+    /* Header */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid #ebebeb;
+    }
+
+    .site-header .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 16px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .logo a {
+      font-family: "Playfair Display", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    /* Busca */
+    .search-wrapper {
+      position: relative;
+      flex: 1;
+      max-width: 350px;
+      margin: 0 24px;
+    }
+
+    .search-wrapper .icon-search {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      transform: translateY(-50%);
+      color: #888;
+    }
+
+    .search-wrapper input {
+      width: 100%;
+      padding: 8px 12px 8px 36px;
+      border: 1px solid #e6e6e6;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .search-wrapper input:focus {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ações do usuário */
+    .user-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    /* Botões de ação (Escrever, Notificação) */
+    .btn-action {
+      display: flex;
+      align-items: center;
+      background: none;
+      border: none;
+      color: #444;
+      text-decoration: none;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .btn-action:hover {
+      color: #000;
+    }
+
+    .btn-action .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 6px;
+      fill: currentColor;
+      stroke: currentColor;
+    }
+
+    .search-wrapper-sm {
+      display: none;
+    }
+
+    @media (max-width: 425px) {
+      .logo a {
+        font-size: 18px;
+      }
+
+      #write-post,
+      .search-wrapper {
+        display: none;
+      }
+
+      .search-wrapper-sm {
+        display: block;
+      }
+
+      .search-wrapper-sm {
+        position: relative;
+        flex: 1;
+        max-width: 300px;
+        margin: 0 24px;
+      }
+
+      .search-wrapper-sm .icon-search {
+        position: absolute;
+        top: 30%;
+        left: 12px;
+        width: 20px;
+        height: 26px;
+        transform: translateY(-50%);
+        color: #888;
+      }
+    }
+
+    /* Avatar */
+    .avatar img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #e6e6e6;
+      cursor: pointer;
+    }
+
+    /* Main */
     .main-container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border-top: none;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      border-top: none;
     }
 
     @media (min-width: 768px) {
-    .main-container {
+      .main-container {
         flex-direction: row;
         gap: 2rem;
-    }
+      }
 
-    .posts {
+      .posts {
         border-right: 1px solid #e5e7eb;
         padding-right: 2rem;
+      }
     }
-    }
-
 
     .post {
       display: flex;
@@ -139,4 +274,3 @@
       border-radius: 9999px;
       font-size: 0.875rem;
     }
-
